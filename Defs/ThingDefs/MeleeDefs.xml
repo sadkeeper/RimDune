@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Crysknife</defName>
+    <label>crysknife</label>
+    <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+    <graphicData>
+      <texPath>Things/Crysknife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.2, 1.2)</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>0.85</Mass>
+	  <DeteriorationRate>10</DeteriorationRate>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>7</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

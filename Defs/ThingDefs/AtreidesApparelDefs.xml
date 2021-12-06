@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ====== Clothing ====== -->
+	
+	<!-- == Torso == -->
+	
+		<!-- Atreides Infantry -->
+		
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>AtreidesInfantry</defName>
+		<label>atreides infantry</label>
+		<description>Atreides Infantry</description>
+		<graphicData>
+			<texPath>Things/Apparel/Atreides/Atreides_Infantry/Atreides_Infantry</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Atreides/Atreides_Infantry/Atreides_Infantry</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>dune_apparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+		<!--Atreides Duke-->
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>AtreidesDuke</defName>
+		<label>atreides duke</label>
+		<description>Atreides Infantry</description>
+		<graphicData>
+			<texPath>Things/Apparel/Atreides/Atreides_Duke/Atreides_Duke</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Atreides/Atreides_Duke/Atreides_Duke</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>dune_apparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+		<!--Atreides Infantry Arrakis-->
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>AtreidesInfantryArrakis</defName>
+		<label>atreides infantry arrakis</label>
+		<description>Atreides Infantry</description>
+		<graphicData>
+			<texPath>Things/Apparel/Atreides/Atreides_Arrakis_Infantry/Atreides_Arrakis_Infantry</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Atreides/Atreides_Arrakis_Infantry/Atreides_Arrakis_Infantry</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>dune_apparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!--== Head ==-->
+	
+		<!--Atreides Infantry Cap-->
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>AtreidesInfantryCap</defName>
+		<label>atreides infantry cap</label>
+		<description>Atreides Infantry</description>
+		<graphicData>
+			<texPath>Things/Apparel/Atreides/Atreides_Cap/Atreides_Cap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Atreides/Atreides_Cap/Atreides_Cap</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>dune_apparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>		
+		
+		<!--Atreides Infantry Arrakis Cap-->
+			
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>AtreidesInfantryArrakisCap</defName>
+		<label>atreides infantry arrakis cap</label>
+		<description>Atreides Infantry</description>
+		<graphicData>
+			<texPath>Things/Apparel/Atreides/Atreides_Arrakis_Cap/Atreides_Arrakis_Cap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Atreides/Atreides_Arrakis_Cap/Atreides_Arrakis_Cap</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>dune_apparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+		<!-- Atreides Infantry Hat --> 
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>AtreidesInfantryHat</defName>
+		<label>atreides infantry Hat</label>
+		<description>Atreides Infantry</description>
+		<graphicData>
+			<texPath>Things/Apparel/Atreides/Atreides_Infantry_Hat/Atreides_Infantry_Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Atreides/Atreides_Infantry_Hat/Atreides_Infantry_Hat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>dune_apparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+		<!-- Atreides Officer Hat -->
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>AtreidesOfficerHat</defName>
+		<label>atreides officer Hat</label>
+		<description>Atreides Infantry</description>
+		<graphicData>
+			<texPath>Things/Apparel/Atreides/Atreides_Officer_Hat/Atreides_Officer_Hat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Atreides/Atreides_Officer_Hat/Atreides_Officer_Hat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>dune_apparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	</Defs>

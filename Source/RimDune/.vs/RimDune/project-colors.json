@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "04f6bd3f-cfdd-4d7c-a685-d083a96258b4": {
+      "ProjectGuid": "04f6bd3f-cfdd-4d7c-a685-d083a96258b4",
+      "DisplayName": "RimDune",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
