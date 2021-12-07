@@ -15,7 +15,7 @@
 	<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>PsionicBlastProjectile</defaultProjectile>
-	<isViolent>true</isViolent>
+	<isViolent>false</isViolent>
         <warmupTime>1</warmupTime>
         <SecondsToRecharge>180.0</SecondsToRecharge>
         <range>24</range>
@@ -43,8 +43,8 @@
    </graphicData>
    <projectile>
 	<flyOverhead>true</flyOverhead>
-	<damageDef>Cut</damageDef>
-	<damageAmountBase>15</damageAmountBase>
+	<damageDef>Stun</damageDef>
+	<damageAmountBase>0</damageAmountBase>
 	<speed>30</speed>
    </projectile>
  </ThingDef>

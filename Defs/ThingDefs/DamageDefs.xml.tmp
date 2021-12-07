@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef Name="VoicedBase" Abstract="True">
+		<harmsHealth>false</harmsHealth>
+		<makesBlood>false</makesBlood>
+	</DamageDef>
+	
+	<DamageDef ParentName="VoicedBase">
+		<defName>Voiced</defName>
+		<label>voiced</label>
+		<modExtensions>
+            <workerClass>DamageWorker_Stun</workerClass>
+        </modExtensions>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been overwhelmed by The Voice.</deathMessage>
+		<defaultDamage>0</defaultDamage>
+	</DamageDef>
+
+</Defs>

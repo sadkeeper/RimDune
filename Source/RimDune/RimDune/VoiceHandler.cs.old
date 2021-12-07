@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Verse;
+using RimWorld;
+using UnityEngine;
+
+namespace RimDune
+{
+	public class VoiceHandler : IExposable
+	{
+		public Thing parent;
+
+		private int voicedTicksLeft;
+
+		private Mote moteStun;
+
+		private bool showStunMote = true;
+
+		public const float StunDurationTicksPerDamage = 30f;
+
+		public bool Voiced
+		{
+			get
+			{
+				return this.voicedTicksLeft > 0;
+			}
+		}
+
+		public int VoicedTicksLeft
+		{
+			get
+			{
+				return this.voicedTicksLeft;
+			}
+		}
+
+		public VoiceHandler(Thing parent)
+		{
+			this.parent = parent;
+		}
+
+		public void ExposeData()
+		{
+			Scribe_Values.Look<int>(ref this.voicedTicksLeft, "voicedTicksLeft", 0, false);
+			Scribe_Values.Look<bool>(ref this.showStunMote, "showStunMote", false, false);
+		}
+
+		public void VoicedHandlerTick()
+		{
+			if (this.voicedTicksLeft > 0)
+			{
+				this.voicedTicksLeft--;
+				if (this.showStunMote && (this.moteStun == null || this.moteStun.Destroyed))
+				{
+					this.moteStun = MoteMaker.MakeStunOverlay(this.parent);
+				}
+				Pawn pawn = this.parent as Pawn;
+				if (pawn != null && pawn.Downed)
+				{
+					this.voicedTicksLeft = 0;
+				}
+				if (this.moteStun != null)
+				{
+					this.moteStun.Maintain();
+				}
+
+			}
+		}
+
+		public void Notify_DamageApplied(DamageInfo dinfo)
+		{
+			Pawn pawn = this.parent as Pawn;
+			if (pawn != null && (pawn.Downed || pawn.Dead))
+			{
+				return;
+			}
+			if (dinfo.Def == DamageDefOf.Stun)
+			{
+				this.StunFor(Mathf.RoundToInt(dinfo.Amount * 30f), dinfo.Instigator, true, true);
+				return;
+			}
+		}
+
+		public void StunFor(int ticks, Thing instigator, bool addBattleLog = true, bool showMote = true)
+		{
+			this.voicedTicksLeft = Mathf.Max(this.voicedTicksLeft, ticks);
+			this.showStunMote = showMote;
+			if (addBattleLog)
+			{
+				Find.BattleLog.Add(new BattleLogEntry_Event(this.parent, RulePackDefOf.Event_Stun, instigator));
+			}
+		}
+	}
+	public class DamageWorker_Voice : DamageWorker
+	{
+		public override DamageWorker.DamageResult Apply(DamageInfo dinfo, Thing victim)
+		{
+			DamageWorker.DamageResult expr_08 = base.Apply(dinfo, victim);
+			expr_08.stunned = true;
+			return expr_08;
+		}
+	}
+
+}

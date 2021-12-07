@@ -33,12 +33,15 @@
   <ItemGroup>
     <Reference Include="0JecsTools">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Users\timen\Desktop\Code\Rimworld Mods\0JecsTools.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUser">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Users\timen\Desktop\Code\Rimworld Mods\AbilityUser.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
