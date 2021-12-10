@@ -5,5 +5,4 @@ C:\Users\timen\source\repos\RimDune\RimDune\obj\Debug\RimDune.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimDune\Source\RimDune\RimDune\obj\Debug\RimDune.csproj.AssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimDune\Source\RimDune\RimDune\obj\Debug\RimDune.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimDune\Source\RimDune\RimDune\obj\Debug\RimDune.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimDune\Source\RimDune\RimDune\obj\Debug\RimDune.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimDune\RimDune.dll

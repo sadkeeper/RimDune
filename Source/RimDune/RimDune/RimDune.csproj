@@ -57,9 +57,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HediffComp_Voiced.cs" />
     <Compile Include="TheVoice.cs" />
     <Compile Include="loaded.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="VoiceHandler.cs.old" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

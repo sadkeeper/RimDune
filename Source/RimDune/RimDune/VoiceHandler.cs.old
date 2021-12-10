@@ -17,7 +17,7 @@ namespace RimDune
 
 		private bool showStunMote = true;
 
-		public const float StunDurationTicksPerDamage = 30f;
+		public const float VoicedDurationTicksPerDamage = 30f;
 
 		public bool Voiced
 		{
@@ -75,7 +75,7 @@ namespace RimDune
 			{
 				return;
 			}
-			if (dinfo.Def == DamageDefOf.Stun)
+			if (dinfo.Def == DamageDefOf.Voiced)
 			{
 				this.StunFor(Mathf.RoundToInt(dinfo.Amount * 30f), dinfo.Instigator, true, true);
 				return;
@@ -100,6 +100,11 @@ namespace RimDune
 			expr_08.stunned = true;
 			return expr_08;
 		}
+	}
+
+	public static class DamageDefOf
+	{
+		public static DamageDef Voiced;
 	}
 
 }

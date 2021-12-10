@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>SpiceHigh</defName>
+    <label>high on spice</label>
+    <labelNoun>a spice high</labelNoun>
+    <description>Active spice in the bloodstream. Generates an intense euphoric high.</description>
+    <hediffClass>RimDune.VoiceHediff</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.5</painFactor>
+          <capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<offset>0.50</offset>
+			  </li>
+			  <li>
+				<capacity>Moving</capacity>
+				<offset>0.05</offset>
+			  </li>
+			  <li>
+				<capacity>Sight</capacity>
+				<offset>0.50</offset>
+			  </li>
+			  <li>
+				<capacity>BloodFiltration</capacity>
+				<offset>0.70</offset>
+			  </li>
+			  <li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.70</offset>
+			  </li>
+			   <li>
+				<capacity>Metabolism</capacity>
+				<offset>0.70</offset>
+			  </li>
+			  <li>
+				<capacity>Breathing</capacity>
+				<offset>0.70</offset>
+			  </li>
+			  <li>
+				<capacity>Hearing</capacity>
+				<offset>0.50</offset>
+			  </li>
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+	
+	<HediffDef Name="HediffVoicedBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		
+		<initialSeverity>1</initialSeverity>
+
+		<tendable>false</tendable>
+		<makesAlert>true</makesAlert>
+		<scenarioCanAdd>false</scenarioCanAdd>
+	</HediffDef>
+	
+	<HediffDef Name="HediffVoiced" ParentName="HediffVoicedBase">
+		<defName>Hediff_LTF_T1FactionChange</defName>
+		<description>This pawn is being influenced by The Voice</description>
+		<label>voiced pawn</label>
+		<labelNoun>an influenced pawn</labelNoun>
+		<comps>
+			<li Class="RimDune.HediffComp_Voiced">
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>
