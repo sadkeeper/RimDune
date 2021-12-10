@@ -11,7 +11,6 @@ namespace RimDune
 {
     public class HediffComp_Voiced : HediffComp
     {
-        public Thing parent;
         private int voicedTicksLeft = 0;
         public Faction originalFaction;
         public Faction playerFaction;
@@ -27,15 +26,11 @@ namespace RimDune
             }
         }
 
-        public HediffComp_Voiced(Thing parent)
-        {
-            this.parent = parent;
-        }
 
 
         public void VoicedHandlerTick()
         {
-            Pawn pawn = this.parent as Pawn;
+            Pawn pawn = this.parent.pawn;
             this.originalFaction = pawn.Faction;
             this.playerFaction = Faction.OfPlayer;
             if (this.voicedTicksLeft > 0)

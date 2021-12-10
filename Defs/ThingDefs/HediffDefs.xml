@@ -60,23 +60,17 @@
 	
 	<HediffDef Name="HediffVoicedBase" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
-		
 		<initialSeverity>1</initialSeverity>
-
 		<tendable>false</tendable>
 		<makesAlert>true</makesAlert>
 		<scenarioCanAdd>false</scenarioCanAdd>
 	</HediffDef>
 	
-	<HediffDef Name="HediffVoiced" ParentName="HediffVoicedBase">
-		<defName>Hediff_LTF_T1FactionChange</defName>
+	<HediffDef Name="HediffVoiced" ParentName="HediffVoicedBase" Class="RimDune.HediffComp_Voiced">
+		<defName>HediffVoiced</defName>
 		<description>This pawn is being influenced by The Voice</description>
 		<label>voiced pawn</label>
 		<labelNoun>an influenced pawn</labelNoun>
-		<comps>
-			<li Class="RimDune.HediffComp_Voiced">
-			</li>
-		</comps>
 	</HediffDef>
 
 </Defs>
