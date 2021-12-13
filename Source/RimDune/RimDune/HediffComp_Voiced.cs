@@ -9,9 +9,15 @@ using UnityEngine;
 
 namespace RimDune
 {
+
+    public class HediffCompProperties_Voiced : HediffCompProperties
+    {
+        public int voicedTicksLeft;
+    }
+
     public class HediffComp_Voiced : HediffComp
     {
-        private int voicedTicksLeft = 0;
+        public int voicedTicksLeft = 0;
         public Faction originalFaction;
         public Faction playerFaction;
         public Pawn Target = null;
@@ -26,7 +32,17 @@ namespace RimDune
             }
         }
 
-
+        private HediffCompProperties_Voiced Props
+        {
+            get
+            {
+                return (HediffCompProperties_Voiced)this.props;
+            }
+        }
+        public virtual float VoicedChangePerDay()
+        {
+            return this.Props.voicedTicksLeft;
+        }
 
         public void VoicedHandlerTick()
         {
@@ -44,7 +60,7 @@ namespace RimDune
                 }
 
             }
-            else if (this.voicedTicksLeft == 0)
+            else if (this.voicedTicksLeft <= 0)
             {
                 this.Target.SetFaction(originalFaction);
             }
